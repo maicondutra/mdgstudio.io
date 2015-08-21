@@ -1,0 +1,55 @@
+AddressesViewModel viewModel = this.Property.CurrentValue as AddressesViewModel;
+
+            var personCatalogDefitions = viewModel.ServiceProvider.GetService(typeof(PersonCatalogDefinitions)) as PersonCatalogDefinitions;
+            var customerCatalog = viewModel.GetService(typeof(CustomerCatalog));
+
+            if (personCatalogDefitions != null)
+            {
+                customerCatalog = personCatalogDefitions.ServiceProvider.GetService(typeof(CustomerCatalog)) as CustomerCatalog;
+
+                if (customerCatalog != null)
+                {
+                    UserDataService dataService = new UserDataService(ApplicationEnvironment.Instance.User.Credential.Owner);
+                    dataService.AllowActionForAsync((payableRestriction) =>
+                    {
+                        if (payableRestriction)
+                        {
+                            var collection = viewModel.Addresses.Any(a => a.AddressType == "Shipping");
+                            if (!collection)
+                                this.AddError(Strings.msgAlert_CustomerCatalog_AdressShipping);// É obrigatório o cadastro de um endereço do tipo Entrega
+                    }
+                    }, ApplicationEnvironment.Instance.User.Credential.UserID, ApplicationEnvironment.Instance.User.SelectedCompany, "CustomerCatalog_AdressShipping");
+
+                    dataService.AllowActionForAsync((payableRestriction) =>
+                    {
+                        if (payableRestriction)
+                        {
+                            var collection = viewModel.Addresses.Any(a => a.AddressType == "Billing");// É obrigatório o cadastro de um endereço do tipo Faturamento
+                        if (!collection)
+                                this.AddError(Strings.msgAlert_CustomerCatalog_AdressBilling);
+                        }
+                    }, ApplicationEnvironment.Instance.User.Credential.UserID, ApplicationEnvironment.Instance.User.SelectedCompany, "CustomerCatalog_AdressBilling");
+                }
+            }
+
+
+            foreach (var item in viewModel.Addresses)
+            {
+                if (string.IsNullOrEmpty(item.DataPersistenceItem.Item.Address))
+                    this.AddError(Strings.msgAlert_PleaseFillTheFieldAddress);
+
+                if (string.IsNullOrEmpty(item.DataPersistenceItem.Item.AddressType))
+                    this.AddError(Strings.msgAlert_PleaseInformTheTypeOfTheAddress);
+
+                if (item.DataPersistenceItem.Item.CityID == null || item.DataPersistenceItem.Item.CityID == Guid.Empty)
+                    this.AddError(Strings.msgAlert_PleaseInformTheCity);
+
+                if (string.IsNullOrEmpty(item.DataPersistenceItem.Item.Neighborhood))
+                    this.AddError(Strings.msgAlert_PleaseFillTheFieldNeighborhood);
+
+                if (string.IsNullOrEmpty(item.DataPersistenceItem.Item.ResidenceType))
+                    item.DataPersistenceItem.Item.ResidenceType = "Owned";
+            }
+
+            if (this.Property.Required && !viewModel.Addresses.Any())
+                this.AddError(Strings.msgAlert_AtLeastOnAddressMustBeInformed);
