@@ -39,7 +39,7 @@ if (!empty($_POST)){
 
   $headers = "MIME-Version: 1.0" . "\r\n"; 
   $headers .= "Content-type:text/html; charset=utf-8" . "\r\n"; 
-  $headers .= "From: <$emailFrom>" . "\r\n";
+  $headers .= "From: <$email>" . "\r\n";
   mail($emailTo, $emailSubject, $message, $headers);
 
   $data['success'] = true;
