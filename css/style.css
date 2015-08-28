@@ -35,7 +35,7 @@
     line-height:20px;
 }
 a {
-    color:#181A1C;
+    color:#26323E;
     text-decoration: none;
 }
 a:hover {
@@ -54,7 +54,7 @@ p {
     color: #fff;
 }
 .navbar {
-    background: #181A1C;
+    background: #26323E;
     margin-bottom:0;
     min-height:70px;
 }
@@ -65,7 +65,7 @@ p {
     padding-top:0;
 }
 .navbar-inner {
-    background: #181A1C;
+    background: #26323E;
     border-radius:0;
     filter: none;
     border: none;
@@ -82,7 +82,7 @@ p {
     margin:10px 3px;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
-    border: 1px solid #181A1C;
+    border: 1px solid #26323E;
     box-shadow: none;
     font-size:15px;
     text-shadow: none;
@@ -92,7 +92,7 @@ p {
 .navbar .nav > li:hover> a, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
     border: 1px solid #FECE1A;
     color: #fff;
-    background-color: #181A1C;
+    background-color: #26323E;
     transition: border-color 1s ease;
 }
 .nav-pills {
@@ -106,10 +106,10 @@ p {
     margin-right:5px;
     padding-left:25px;
     padding-right:25px;
-    border: 1px solid #181A1C;
+    border: 1px solid #26323E;
 }
 .nav-pills > li > a:hover, .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
-    background: #181A1C;
+    background: #26323E;
     color: #fff;
 }
 .navbar .btn-navbar:hover, .navbar .btn-navbar {
@@ -142,12 +142,12 @@ p {
 .large-text {
     line-height:1.2em;
     font-size: 30px;
-    color: #181A1C;
+    color: #26323E;
     padding:20px;
     margin-bottom:20px;
 }
 .highlighted-box h1, .highlighted-box p {
-    color: #181A1C !important;
+    color: #26323E !important;
 }
 .circle-border {
     display: inline-block;
@@ -176,7 +176,7 @@ p {
     text-align:center;
     width: 0;
     height: 0;
-    border-top: 30px solid #181A1C;
+    border-top: 30px solid #26323E;
     border-left: 585px outset transparent;
     border-right: 585px outset transparent;
     position: relative;
@@ -206,34 +206,34 @@ p {
 **********/
  .button,  .button:visited, .button:focus {
     display:inline-block;
-    border:1px solid #181A1C;
-    color:#181A1C;
+    border:1px solid #26323E;
+    color:#26323E;
     background-color:transparent;
     padding:15px 30px;
     font-size:17px;
     line-height:auto;
 }
 .button:hover, .button:active{
-    background-color:#181A1C;
+    background-color:#26323E;
     color:#fff;
 }
 .button-sp, .button-sp:visited, .button-sp:focus {
     border:none;
     background-color:#FECE1A;
-    color:#181A1C;
+    color:#26323E;
 }
 .button-sp:hover, .button-sp:active {
-    background-color:#181A1C;
+    background-color:#26323E;
     color:#FECE1A;
 }
 .button-ps, .button-ps:visited, .button-ps:focus {
     border:none;
-    background-color:#181A1C;
+    background-color:#26323E;
     color:#FECE1A;
 }
 .button-ps:hover, .button-ps:active {
     background-color:#FECE1A;
-    color:#181A1C;
+    color:#26323E;
 }
 /*
 2.3 Thumbnails - Predefined bootstrap's thumbnail class.
@@ -297,7 +297,7 @@ p {
     left:0;
     width:100%;
     height:100%;
-    background:#181A1C;
+    background:#26323E;
     position:absolute;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -332,7 +332,7 @@ p {
     color: #FECE1A;
 }
 .social li a:hover {
-    color:#181A1C;
+    color:#26323E;
 }
 /*
 3. Sections 
@@ -359,7 +359,7 @@ p {
     font-weight: lighter;
 }
 .primary-section {
-    background:#181A1C;
+    background:#26323E;
 }
 .primary-section .triangle {
     border-top: 40px solid #FECE1A;
@@ -377,15 +377,15 @@ p {
     background:#FECE1A;
 }
 .secondary-section .title {
-    border-bottom: 1px solid #181A1C;
+    border-bottom: 1px solid #26323E;
 }
 .secondary-section h1, .secondary-section .title p {
-    color: #181A1C;
+    color: #26323E;
 }
 /* Third section use bacground image */
 .third-section {
     padding-bottom: 70px;
-    background: #181A1C url(../images/brand-bg.png) no-repeat center;
+    background: #26323E url(../images/brand-bg.png) no-repeat center;
     border-top:6px solid #FECE1A;
 }
 .third-section .container {
@@ -424,7 +424,7 @@ p {
 ***************************************/
  .single-project {
     margin-bottom:30px;
-    background:#181A1C;
+    background:#26323E;
 }
 .single-project img {
     width:100%;
@@ -527,7 +527,7 @@ p {
     margin:0;
     left: 10px;
     z-index: 1;
-    color: #181A1C;
+    color: #26323E;
 }
 .skills li .bar {
     height:40px;
@@ -561,10 +561,10 @@ p {
     height:20px;
 }
 .client-nav li a:hover {
-    background:#181A1C;
+    background:#26323E;
 }
 .testimonial p {
-    color:#181A1C;
+    color:#26323E;
     background:#FECE1A;
     padding:15px;
     margin:0;
@@ -621,7 +621,7 @@ p {
     text-align:center;
 }
 .price-column h3 {
-    background-color:#181A1C;
+    background-color:#26323E;
     text-transform:uppercase;
     text-align: center;
     color:#FECE1A;
@@ -653,7 +653,7 @@ p {
 .price-text{
     margin:30px 0 20px;
     font-size:20px;
-    color: #181A1C;
+    color: #26323E;
     font-weight:normal;
 }
 /*
@@ -680,7 +680,7 @@ p {
 }
 .newsletter .button-sp:hover, .newsletter .button-sp:active {
     background-color:#FFF;
-    color:#181A1C;
+    color:#26323E;
 }
 
 /*
@@ -690,7 +690,7 @@ p {
     background: #FECE1A;
 }
 .contact h1, .contact h2, .contact h3, .contact h4, .contact h5, .contact h6, .contact .section .title > p, .contact .social > li > a {
-    color: #181A1C;
+    color: #26323E;
 }
 .contact textarea, .contact input[type="text"], .contact input[type="email"] {
     padding: 10px;
@@ -753,7 +753,7 @@ p {
     color:#fff;
 }
 .contact .social li a:hover {
-    color:#181A1C;
+    color:#26323E;
 }
 .contact-form {
     background:#fff;
@@ -786,16 +786,16 @@ p {
     width:60%;
     margin:0 auto;
     padding:15px;
-    color:#181A1C;
+    color:#26323E;
 }
 .black {
-    color:#181A1C;
+    color:#26323E;
 }
 /*
 3.8 Footer
 ********************************************************************/
  .footer {
-    background: #181A1C;
+    background: #26323E;
     text-align: center;
 }
 .footer > p {
