@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1439328347
+#1440906175
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -9,6 +9,13 @@ images/player-sheet0.png
 images/bullet-sheet0.png
 images/explosion-sheet0.png
 images/monster-sheet0.png
+images/gameoverfundo-sheet0.png
+images/retro-sheet0.png
+images/sprite-sheet0.png
+images/semtítulo-sheet0.png
+images/sprite2-sheet0.png
+images/portal-sheet0.png
+images/botão-sheet0.png
 icon-16.png
 icon-32.png
 icon-114.png
