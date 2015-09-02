@@ -234,12 +234,12 @@ $("#send-mail").click(function () {
 
 
         if (error == false) {
-			alert("asda");
+			
             var dataString = $('#contact-form').serialize(); // Collect data from form
             $.ajax({
                 type: "POST",
-                url: $('#contact-form').attr('action'),
-			    //url: "http://mdgstudio.com.br/php/mail.php",
+                //url: $('#contact-form').attr('action'),
+			    url: "http://mdgstudio.com.br/php/mail.php",
                 data: dataString,
                 timeout: 6000,
                 error: function (request, error) {
