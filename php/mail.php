@@ -1,7 +1,7 @@
 <?php
 
 include 'functions.php';
-
+var_dump("entro ak"); die();
 if (!empty($_POST)){
 
   $data['success'] = true;
