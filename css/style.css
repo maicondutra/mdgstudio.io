@@ -53,6 +53,16 @@ p {
     font-weight: 100;
     color: #fff;
 }
+
+.Logo-Topo{
+	width:220px;
+	height:auto;
+}
+
+.navbar-inner .nav-collapse{
+	margin-top {margin-top:20px;}
+}
+
 .navbar {
     background: #26323E;
     margin-bottom:0;
