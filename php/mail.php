@@ -8,13 +8,13 @@ if (!empty($_POST)){
   $_POST  = multiDimensionalArrayMap('cleanEvilTags', $_POST);
   $_POST  = multiDimensionalArrayMap('cleanData', $_POST);
 
-  //your email adress 
-  $emailTo ="maicon_huck@yahoo.com.br"; //"yourmail@yoursite.com";
+  //Seu endereço de e-mail
+  $emailTo ="dutra.maicon@gmail.com"; //seumail@seusite.com";
 
-  //from email adress
-  $emailFrom ="contact@yoursite.com"; //"contact@yoursite.com";
+  //Endereço de e-mail do contato
+  $emailFrom ="dutra.maicon@gmail.com"; //"contato@seusite.com";
 
-  //email subject
+  //Assunto do e-mail
   $emailSubject = "Mail from Porta";
 
   $name = $_POST["name"];
@@ -32,6 +32,7 @@ if (!empty($_POST)){
 
  if($data['success'] == true){
 
+	var_dump($emailTo);
   $message = "NAME: $name<br>
   EMAIL: $email<br>
   COMMENT: $comment";
