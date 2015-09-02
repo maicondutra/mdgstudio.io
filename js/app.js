@@ -237,10 +237,11 @@ $("#send-mail").click(function () {
             $.ajax({
                 type: "POST",
                 url: $('#contact-form').attr('action'),
+			    //url: "http://mdgstudio.com.br/php/mail.php",
                 data: dataString,
                 timeout: 6000,
                 error: function (request, error) {
-
+				alert("erro");
                 },
                 success: function (response) {
                     response = $.parseJSON(response);
