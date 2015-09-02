@@ -232,7 +232,9 @@ $("#send-mail").click(function () {
             error = true; // change the error state to true
         }
 
+
         if (error == false) {
+			alert("asda");
             var dataString = $('#contact-form').serialize(); // Collect data from form
             $.ajax({
                 type: "POST",
