@@ -240,10 +240,10 @@ $("#send-mail").click(function () {
                 type: "POST",
                 //url: $('#contact-form').attr('action'),
 			    url: "http://mdgstudio.com.br/php/mail.php",
-                data: dataString,
+                //data: dataString,
                 timeout: 6000,
                 error: function (request, error) {
-				alert("erro");
+				//alert("erro");
                 },
                 success: function (response) {
                     response = $.parseJSON(response);
