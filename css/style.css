@@ -389,9 +389,22 @@ p {
 .secondary-section .title {
     border-bottom: 1px solid #26323E;
 }
-.secondary-section h1, .secondary-section .title p {
+.secondary-section h1, .secondary-section .title p, h2, h3, h4, h5, h6 {
     color: #26323E;
 }
+
+/*Criado especialmente para o PJD.mtml*/
+.pjd-section {
+    /*background:#FECE1A;*/
+	    background: #FECE1A url(../images/logo.png) no-repeat center;
+}
+.pjd-section .title {
+    border-bottom: 1px solid #26323E;
+}
+.pjd-section h1, .secondary-section .title p, h2, h3, h4, h5, h6 {
+    color: #26323E;	
+}	
+
 /* Third section use bacground image */
 .third-section {
     padding-bottom: 70px;
