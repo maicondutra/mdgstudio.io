@@ -96,19 +96,65 @@ p {
     box-shadow: none;
     font-size:15px;
     text-shadow: none;
-    color: #fff;
+    color: #FFFFFF;
     transition: border-color 1s ease;
 }
+
+
+
+/*Criado para o sub menu inicio*/
+.navbar .nav  li  ul {
+position:absolute;
+top:55px;
+left:280px;
+display:none;
+text-transform:uppercase;
+}
+
+.navbar .nav  li  ul  li{
+border: 1px solid #FECE1A;
+display:block;
+width:auto;
+height:45px;
+line-height:auto;
+margin:2px;
+padding-left:25px;
+padding-right:25px;
+background-color: #26323E;
+}
+
+.navbar .nav  li  ul  li a{
+margin:auto;
+color: #FFFFFF;
+line-height: 45px;
+font-size: 15px;
+font-variant:normal;
+}
+
+.navbar .nav  li:hover ul, .navbar .nav li.over ul, .navbar .nav li ul li:hover ul, .navbar .nav li ul li.over ul {
+display:block;
+border: 1px solid #26323E;
+color: #FFFFFF;
+background-color: #26323E;
+transition: border-color 1s ease;
+}
+/*Criado para o sub menu fim*/
+
+
+
+
+
 .navbar .nav > li:hover> a, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
     border: 1px solid #FECE1A;
     color: #fff;
     background-color: #26323E;
     transition: border-color 1s ease;
 }
+
 .nav-pills {
     margin-bottom: 30px;
 }
-.nav-pills > li > a {
+.nav-pills > li > a >ul {
     background: transparent;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -917,3 +963,77 @@ p {
         margin-top:30px;
     }
 }
+/**
+*** Seta para ESQUERDA
+**/
+.seta-esquerda:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0; 
+  height: 0; 
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent; 
+  border-right: 5px solid blue; 
+}
+
+/**
+*** Seta para DIREITA
+**/
+.seta-direita:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0; 
+  height: 0; 
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid green;
+}
+
+/**
+*** Seta para CIMA
+**/
+.seta-cima:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0; 
+  height: 0; 
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+}
+
+/**
+*** Seta para BAIXO
+**/
+.seta-baixo:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 0; 
+  height: 0; 
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #f00;
+}
+/**
+*** Formatação para o exemplo
+*
+a,
+span,
+i,
+div {
+  font: 14px sans-serif;
+  display: block;
+  padding-top: 10px;
+}*/
