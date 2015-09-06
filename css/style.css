@@ -442,7 +442,7 @@ transition: border-color 1s ease;
 /*Criado especialmente para o PJD.mtml*/
 .pjd-section {
     /*background:#FECE1A;*/
-	    background: #FECE1A url(../images/logo.png) no-repeat center;
+	    background: #FECE1A url(../images/LogoBG.png) no-repeat center;
 }
 .pjd-section .title {
     border-bottom: 1px solid #26323E;
@@ -522,6 +522,9 @@ transition: border-color 1s ease;
 .project-info span, .project-title h3 {
     color:#FECE1A;
 }
+.project-info a{
+    color:#FECE1A;
+}
 .project-info {
     font-weight:100;
     padding:10px 0;
@@ -533,6 +536,29 @@ transition: border-color 1s ease;
 .project-info div {
     margin-bottom:5px;
 }
+/*criado para pjd*/
+.project-info2 span, .project-title h3 {
+    color:#FECE1A;
+}
+.project-info2 a{
+    color:#FECE1A;
+}
+.project-info2 p a{
+    color:#FECE1A;
+}
+.project-info2 {
+    font-weight:100;
+    padding:10px 0;
+}
+.project-info2 div {
+    margin-bottom:5px;
+}
+.project-info2 span {
+    width: 270px;
+    display: inline-block;
+}
+/*criado para pjd*/
+
 .close {
     float: right;
     width: 40px;
