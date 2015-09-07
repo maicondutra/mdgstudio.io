@@ -284,13 +284,15 @@ $("#send-mail").click(function () {
 
     //Initial Show/Hide portfolio element.
     $('div.toggleDiv').hide();
-    $('.show_hide').showHide({
+	$('.show_hide').showHide({
         speed: 500,
         changeText: 0,
         showText: 'View',
         hideText: 'Close'
     });
 
+	
+	
     /************************
     Animate elements
     *************************/
