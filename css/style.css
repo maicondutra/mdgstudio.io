@@ -537,11 +537,11 @@ transition: border-color 1s ease;
     margin-bottom:5px;
 }
 /*criado para pjd*/
-.project-info2 span, .project-title h3 {
+.project-info2 span {
     color:#FECE1A;
 }
 .project-info2 a{
-    color:#FECE1A;
+    color:#89b859;
 }
 .project-info2 p a{
     color:#FECE1A;
@@ -552,10 +552,15 @@ transition: border-color 1s ease;
 }
 .project-info2 div {
     margin-bottom:5px;
+	margin-left: 5px;
 }
 .project-info2 span {
-    width: 270px;
+    width: 570px;
+	margin-left: 10px;
     display: inline-block;
+}
+.project-title h1, .project-title h2, .project-title h3, .project-title h4, .project-title h5, .project-title h6, .project-title h7 {
+    color:#FECE1A;
 }
 /*criado para pjd*/
 
