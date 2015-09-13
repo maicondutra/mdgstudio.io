@@ -413,8 +413,8 @@ function initializeMap() {
 	var showByDefault = true;
 	var cboxContainer = document.getElementById("cboxwrap");
 	var cboxToggleButton = document.getElementById("cboxbutton");
-	var buttonStringOpen = "Open Chat";
-	var buttonStringClose = "Close Chat";
+	var buttonStringOpen = "Abrir Chat";
+	var buttonStringClose = "Fechar Chat";
 	var lsKey = "cbox:isOpen";
 
 	var cboxHTML = '<!-- BEGIN CBOX - www.cbox.ws - v4.3 -->'
