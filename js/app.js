@@ -405,3 +405,65 @@ function initializeMap() {
 
     infowindow.open(map, marker);
 }
+
+/*
+*	Cbox dynamic loader v.2
+*/
+(function () {
+	var showByDefault = true;
+	var cboxContainer = document.getElementById("cboxwrap");
+	var cboxToggleButton = document.getElementById("cboxbutton");
+	var buttonStringOpen = "Open Chat";
+	var buttonStringClose = "Close Chat";
+	var lsKey = "cbox:isOpen";
+
+	var cboxHTML = '<!-- BEGIN CBOX - www.cbox.ws - v4.3 -->'
+	+'<div id="cboxdiv" style="position: relative; margin: 0 auto; width: 200px; font-size: 0; line-height: 0;">'
+	+'<div style="position: relative; height: 300px; overflow: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; border:#ababab 1px solid;"><iframe src="http://www3.cbox.ws/box/?boxid=3490151&boxtag=a6esmg&sec=main" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="auto" allowtransparency="yes" name="cboxmain3-3490151" id="cboxmain3-3490151"></iframe></div>'
+	+'<div style="position: relative; height: 80px; overflow: hidden; border:#ababab 1px solid; border-top: 0px;"><iframe src="http://www3.cbox.ws/box/?boxid=3490151&boxtag=a6esmg&sec=form" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="no" allowtransparency="yes" name="cboxform3-3490151" id="cboxform3-3490151"></iframe></div>'
+	+'</div>'
+	+'<!-- END CBOX -->';
+
+	var htmlInjected = false;
+	var isVisible = false;
+	var toggleCbox = function (show) {
+		
+		if (!show) {
+			cboxContainer.style.display = "none";
+			if (cboxToggleButton) {
+				cboxToggleButton.innerHTML = buttonStringOpen;
+			}
+			
+		}
+		else {
+			cboxContainer.style.display = "block";
+			if (cboxToggleButton) {
+				cboxToggleButton.innerHTML = buttonStringClose;
+			}
+		}
+		
+		if (show && !htmlInjected) {
+			cboxContainer.innerHTML = cboxHTML;
+			htmlInjected = true;
+		}
+		
+		isVisible = show;
+	}
+
+	if (localStorage && lsKey && typeof localStorage.getItem(lsKey) === "string") {
+		toggleCbox((localStorage.getItem(lsKey) === "yes"));
+	}
+	else {
+		toggleCbox(showByDefault);
+	}
+
+	if (cboxToggleButton) {
+		cboxToggleButton.onclick = function () {
+			toggleCbox(!isVisible);
+			
+			if (localStorage && lsKey) {
+				localStorage.setItem(lsKey, isVisible ? "yes" : "no");
+			}
+		}
+	}
+})();	
