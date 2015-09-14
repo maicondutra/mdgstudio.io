@@ -1,0 +1,18 @@
+Aula 02
+
+- Criando segundo plano
+  - encontrar um cenário... 
+  - Import new Asset...
+  - Arraste o cenário na tela
+  - Em 3D coloca para trás e 
+  - volta para 2D
+  - Ajuste a câmera 
+  - Criar um material para segundo plano
+  - adicionar a imagem
+  - Shader
+  - renomear para fundo
+  - Arraste para Sprite Default
+  - Altere
+PARALAX
+  - Adicionar o script movieoffset no segund plano
+  - modificar o valor da variável speed

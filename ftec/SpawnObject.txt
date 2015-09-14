@@ -1,0 +1,50 @@
+
+public class SpawnObject : MonoBehaviour {
+
+	public float maxHeight;
+	public float minHeight;
+	public float rateSpawn;
+	private float currentRateSpawn;
+	public int maxBloco;
+	public GameObject prefab;
+	public List <GameObject> bloco;
+
+	// Use this for initialization
+	void Start () {
+	   for (int i=0; i < maxBloco; i++) {
+			GameObject tempBloco = Instantiate(prefab) as GameObject;
+			bloco.Add(tempBloco);
+			tempBloco.SetActive(true);
+			}
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		currentRateSpawn += Time.deltaTime;
+		if (currentRateSpawn > rateSpawn) {
+			currentRateSpawn = 0;
+			Spawn();
+				}
+	}
+
+	private void Spawn(){
+		float randPosition = Random.Range (minHeight, maxHeight);
+		GameObject tempBloco = null;
+		for (int i = 0; i < maxBloco ; i++) {
+		   if(bloco[i].activeSelf == false) { 
+				tempBloco = bloco[i];
+				break;
+			}
+			}
+			if( tempBloco != null){
+				tempBloco.transform.position = new Vector3(transform.position.x,
+				                                          randPosition,
+				                                          transform.position.z);
+				tempBloco.SetActive(true);
+
+			}
+		}
+
+		
+}
+
