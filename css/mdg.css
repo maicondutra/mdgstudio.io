@@ -87,3 +87,88 @@
 .icon-chart-bar:before { content: '\e80c'; } /* '' */
 .icon-phone:before { content: '\e824'; } /* '' */
 .icon-megaphone:before { content: '\e817'; } /* '' */
+
+
+  /* Borda Topo*/
+  #BordaTopo{
+    width:100%;
+    height: 7px;
+  }
+  #BordaTopo div{
+    width:25%;
+    height: 7px;
+    float: left;
+    top: 0px;
+  }
+  #BordaTopo .bverde{background-color: #71BA51;}
+  #BordaTopo .bamarelo{background-color: #FEC606;}
+  #BordaTopo .bazul{background-color: #3D8EB9;}
+  #BordaTopo .brosa{background-color: #D33257;}
+
+
+  #LogoTopo{ 
+    width:220px;
+    height:90px;
+    background-image: url(../images/logo_branco.png);
+    background-repeat: no-repeat;
+    background-size: 100%
+    }
+  .navbar-fixed-top .navbar-inner  #LogoTopo, .navbar-static-top .navbar-inner #LogoTopo{
+    width:220px;
+    height:90px;
+    background-image: url(../images/logo_azul.png);
+    background-repeat: no-repeat;
+    background-size: 100%
+  }
+  
+    #LogoTopo2{ 
+    width:220px;
+    height:90px;
+	margin: 0px 26px 0px 1200px;
+    background-image: url(../images/logo_branco.png);
+    background-repeat: no-repeat;
+    background-size: 100%
+    }
+  .navbar-fixed-top .navbar-inner  #LogoTopo2, .navbar-static-top .navbar-inner #LogoTopo2{
+    width:220px;
+    height:90px;
+    background-image: url(../images/logo_azul.png);
+    background-repeat: no-repeat;
+    background-size: 100%
+  }
+  
+    .navbar .nav {
+    margin: 0px 26px 0px 300px;
+    float: left;
+}
+
+  /* Topo do Scroll */
+  .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {background-color: #fff;}
+  .navbar-fixed-top .navbar-inner li > a, .navbar-static-top .navbar-inner li > a{color: #26323E;}
+
+.img_wallpaper_grid {
+    width:320px;
+    height:200px;
+    padding:20px;
+    float: left;
+    z-index: -1;
+}
+
+.icons_home .service img {
+    width: 65%;
+    height: auto;
+}
+.icons_home .img-circle {border-radius: 0px;}
+.icons_home .circle-border {
+    display: inline-block;
+    border-radius: 0px;
+    border: none;
+    margin-bottom: 20px;
+    }
+
+  #home .da-slide p {width: 39%;}
+  .imgBanner {margin-left: -50px !important;}
+  #home .man img{
+  width: 56%;
+  margin-top: 15%;
+  }
