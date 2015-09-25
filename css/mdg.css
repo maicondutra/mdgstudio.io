@@ -89,7 +89,87 @@
 .icon-megaphone:before { content: '\e817'; } /* '' */
 
 
-  /* Borda Topo*/
+
+/* MENU DROPDOWN */
+
+#menudrop {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  z-index: 999;
+  list-style: none;
+}
+#menudrop ul li a {
+  color:#fff;
+}
+#menudrop li {
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;  
+  z-index: 999;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.navbar > #menudrop li {
+    background:; #FECE1A;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin: 10px 3px;
+    border: 1px solid #26323E;
+    box-shadow: none;
+    font-size: 15px;
+    text-shadow: none;
+    color: #FFF;
+    transition: border-color 1s ease 0s;
+    }
+
+#menudrop li:hover {z-index: 999;}
+#menudrop ul li {padding: 15px 20px;}
+
+#menudrop li ul {
+  background:; #FECE1A;
+  text-transform: uppercase;
+  z-index: 999;
+  padding: 0;
+  position: absolute;
+  top: 52px;
+  left: -22px;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+#menudrop li ul li {
+    font-size: 13px;
+    z-index: 999;
+    display: block;
+    color: #FFF;
+    background-color: #F4AE1A;
+}
+
+#menudrop li ul li:hover { background: #F9CE1A;z-index: 999; }
+#menudrop li:hover ul {
+  z-index: 999;
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+  /* Borda Topo
   #BordaTopo{
     width:100%;
     height: 7px;
@@ -142,7 +222,7 @@
     float: left;
 }
 
-  /* Topo do Scroll */
+  /* Topo do Scroll 
   .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {background-color: #fff;}
   .navbar-fixed-top .navbar-inner li > a, .navbar-static-top .navbar-inner li > a{color: #26323E;}
 
@@ -171,4 +251,4 @@
   #home .man img{
   width: 56%;
   margin-top: 15%;
-  }
+  }*/
