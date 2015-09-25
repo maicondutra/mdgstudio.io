@@ -169,7 +169,7 @@
 }
 
 
-  /* Borda Topo
+  /* Borda Topo*/
   #BordaTopo{
     width:100%;
     height: 7px;
@@ -191,7 +191,8 @@
     height:90px;
     background-image: url(../images/logo_branco.png);
     background-repeat: no-repeat;
-    background-size: 100%
+    background-size: 100%;
+    margin: 0px 26px 0px -350px;
     }
   .navbar-fixed-top .navbar-inner  #LogoTopo, .navbar-static-top .navbar-inner #LogoTopo{
     width:220px;
@@ -204,7 +205,7 @@
     #LogoTopo2{ 
     width:220px;
     height:90px;
-	margin: 0px 26px 0px 1200px;
+	  margin: 0px 26px 0px -800px;
     background-image: url(../images/logo_branco.png);
     background-repeat: no-repeat;
     background-size: 100%
@@ -222,7 +223,7 @@
     float: left;
 }
 
-  /* Topo do Scroll 
+  /* Topo do Scroll */
   .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {background-color: #fff;}
   .navbar-fixed-top .navbar-inner li > a, .navbar-static-top .navbar-inner li > a{color: #26323E;}
 
@@ -251,4 +252,4 @@
   #home .man img{
   width: 56%;
   margin-top: 15%;
-  }*/
+  }
