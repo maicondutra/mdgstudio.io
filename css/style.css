@@ -102,47 +102,6 @@ p {
 
 
 
-/*Criado para o sub menu inicio*/
-.navbar .nav  li  ul {
-position:absolute;
-top:55px;
-left:280px;
-display:none;
-text-transform:uppercase;
-}
-
-.navbar .nav  li  ul  li{
-border: 1px solid #FECE1A;
-display:block;
-width:auto;
-height:45px;
-line-height:auto;
-margin:2px;
-padding-left:25px;
-padding-right:25px;
-background-color: #26323E;
-}
-
-.navbar .nav  li  ul  li a{
-margin:auto;
-color: #FFFFFF;
-line-height: 45px;
-font-size: 15px;
-font-variant:normal;
-}
-
-.navbar .nav  li:hover ul, .navbar .nav li.over ul, .navbar .nav li ul li:hover ul, .navbar .nav li ul li.over ul {
-display:block;
-border: 1px solid #26323E;
-color: #FFFFFF;
-background-color: #26323E;
-transition: border-color 1s ease;
-}
-/*Criado para o sub menu fim*/
-
-
-
-
 
 .navbar .nav > li:hover> a, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
     border: 1px solid #FECE1A;
