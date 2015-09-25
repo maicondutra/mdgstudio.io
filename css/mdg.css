@@ -129,7 +129,7 @@
     }
 
 #menudrop li:hover {z-index: 999;}
-#menudrop ul li {padding: 15px 20px;}
+#menudrop ul li {padding: 1px 10px;}
 
 #menudrop li ul {
   background:; #FECE1A;
