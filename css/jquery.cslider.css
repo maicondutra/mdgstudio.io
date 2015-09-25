@@ -17,7 +17,7 @@
 .da-slider .triangle{
     clear: none;
     top:0;
-    z-index:999;
+    z-index:10;
 }
 
 .da-slider .mask {
