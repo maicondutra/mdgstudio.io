@@ -518,6 +518,14 @@ p {
 	margin-left: 10px;
     display: inline-block;
 }
+
+.project-info2 img {
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 .project-title h1, .project-title h2, .project-title h3, .project-title h4, .project-title h5, .project-title h6, .project-title h7 {
     color:#FECE1A;
 }
