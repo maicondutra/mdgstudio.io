@@ -496,9 +496,7 @@ p {
     margin-bottom:5px;
 }
 /*criado para pjd*/
-.project-info2 span {
-    color:#FECE1A;
-}
+
 .project-info2 a{
     color:#89b859;
 }
@@ -514,9 +512,10 @@ p {
 	margin-left: 5px;
 }
 .project-info2 span {
-    width: 570px;
+    width: 535px;
 	margin-left: 10px;
     display: inline-block;
+	color:#FECE1A;
 }
 
 .project-info2 img{
