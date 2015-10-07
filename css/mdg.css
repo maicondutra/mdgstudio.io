@@ -87,6 +87,10 @@
 .icon-chart-bar:before { content: '\e80c'; } /* '' */
 .icon-phone:before { content: '\e824'; } /* '' */
 .icon-megaphone:before { content: '\e817'; } /* '' */
+.icon-youtube:before { content: '\e96b'; } /* '' */
+.icon-youtube2:before { src: url('../images/youtube.png') }
+.icon-youtube-squared:before { content: '\e96c'; } /* '' */
+.icon-youtube-play:before { content: '\e96d'; } /* '' */
 
 
 
