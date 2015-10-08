@@ -3,7 +3,7 @@
 // Passando os dados obtidos pelo formulário para as variáveis abaixo
 $nomeremetente     = $_POST['nomeremetente'];
 $emailremetente    = trim($_POST['emailremetente']);
-$emaildestinatario = 'blog@richarddesign.com.br'; // Digite seu e-mail aqui, lembrando que o e-mail deve estar em seu servidor web
+$emaildestinatario = 'dutra.maicon@gmail.com'; // Digite seu e-mail aqui, lembrando que o e-mail deve estar em seu servidor web
 $ddd      	   	   = $_POST['ddd'];
 $telefone      	   = $_POST['telefone'];
 $assunto          = $_POST['assunto'];
