@@ -37,10 +37,7 @@ if (!empty($_POST)){
   EMAIL: $email<br>
   COMMENT: $comment";
 
-  Alert("$name");
-  Alert("$email");
-  Alert("$comment");
-
+  
   $headers = "MIME-Version: 1.0" . "\r\n"; 
   $headers .= "Content-type:text/html; charset=utf-8" . "\r\n"; 
   $headers .= "From: <$email>" . "\r\n";

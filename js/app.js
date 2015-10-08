@@ -228,16 +228,14 @@ $("#send-mail").click(function () {
 
 
         if (error == false) {
-			
             var dataString = $('#contact-form').serialize(); // Collect data from form
             $.ajax({
                 type: "POST",
-                //url: $('#contact-form').attr('action'),
-			    url: "http://mdgstudio.com.br/php/mail.php",
-                //data: dataString,
+                url: $('#contact-form').attr('action'),
+                data: dataString,
                 timeout: 6000,
                 error: function (request, error) {
-				//alert("erro");
+
                 },
                 success: function (response) {
                     response = $.parseJSON(response);
