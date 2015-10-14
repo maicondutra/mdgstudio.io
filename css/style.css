@@ -482,14 +482,14 @@ p {
     color:#FECE1A;
 }
 .project-info a{
-    color:#FECE1A;
+    color:#89b859;
 }
 .project-info {
     font-weight:100;
     padding:10px 0;
 }
 .project-info span {
-    width: 80px;
+    width: 90px;
     display: inline-block;
 }
 .project-info div {
