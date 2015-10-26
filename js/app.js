@@ -501,3 +501,19 @@ function initializeMap() {
 	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 	})();
+	
+	
+	( function( $ ) {
+$( document ).ready(function() {
+$('#cssmenu').prepend('<div id="menu-button">Menu</div>');
+	$('#cssmenu #menu-button').on('click', function(){
+		var menu = $(this).next('ul');
+		if (menu.hasClass('open')) {
+			menu.removeClass('open');
+		}
+		else {
+			menu.addClass('open');
+		}
+	});
+});
+} )( jQuery );
