@@ -503,7 +503,7 @@ function initializeMap() {
 	})();
 	
 	
-	( function( $ ) {
+( function( $ ) {
 $( document ).ready(function() {
 $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
 	$('#cssmenu #menu-button').on('click', function(){
