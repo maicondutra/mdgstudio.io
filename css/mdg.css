@@ -224,7 +224,7 @@
 }
 
   /* Topo do Scroll */
-  .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {background-color: #3D8EB9;}
+  .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {background-color: #fff;}
   .navbar-fixed-top .navbar-inner li > a, .navbar-static-top .navbar-inner li > a{color: #fff;}
 
 .img_wallpaper_grid {
