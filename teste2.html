@@ -1,0 +1,49 @@
+	<html>
+	<head>
+	<title>Minha primeira página PHP</title>
+
+	</head>
+	<body>
+		
+        <?
+				$servidor = 'br-cdbr-azure-south-a.cloudapp.net';
+				$banco    = 'acsm_3205009d9d6fc65';
+				$usuario  = 'ba6e0c3234645b';
+				$senha    = '16739578';
+				$link     = mysql_connect($servidor, $usuario, $senha);
+				$db          = mysql_select_db($banco,$link);
+				if(!$link)
+				{
+					echo "erro ao conectar ao banco de dados!";exit();
+				}
+				
+				$SQL = "SELECT * FROM usuario";
+				$RS  = mysql_query($SQL);
+				while($RF = mysql_fetch_array($RS))
+				{
+					echo '<pre>';
+					print_r($RF);
+					echo '</pre>';
+				}
+				
+				/*
+				RESULTADO:
+				Array
+				(
+					[0] => 1
+					[id] => 1
+					[1] => registro 1
+					[descricao] => registro 1
+				)
+				Array
+				(
+					[0] => 2
+					[id] => 2
+					[1] => registro 2 para teste
+					[descricao] => registro 2 para teste
+				)
+				*/
+        ?>
+
+	</body>
+	</html>
