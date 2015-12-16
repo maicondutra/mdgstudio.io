@@ -1,0 +1,15 @@
+	<html>
+	<head>
+	<title>Minha primeira página PHP</title>
+
+	</head>
+	<body>
+
+		<?php 
+			$conecta = mysql_connect("br-cdbr-azure-south-a.cloudapp.net", "ba6e0c3234645b", "16739578") or print (mysql_error()); 
+			print "Conexão OK!"; 
+			mysql_close($conecta); 
+		?>
+
+	</body>
+	</html>
