@@ -4,11 +4,20 @@
 
 	</head>
 	<body>
-
-		<?php 
-			$conecta = mysql_connect("br-cdbr-azure-south-a.cloudapp.net", "ba6e0c3234645b", "16739578") or print (mysql_error()); 
-			print "Conexão OK!"; 
-			mysql_close($conecta); 
+		
+		 <?php 
+				$conecta = mysql_connect("br-cdbr-azure-south-a.cloudapp.net", "ba6e0c3234645b", "16739578") or print (mysql_error()); 
+				mysql_select_db("acsm_3205009d9d6fc65", $conecta) or print(mysql_error()); 
+				$sql = "SELECT id, nome FROM usuario"; 
+				$result = mysql_query($sql, $conecta); 
+				
+				/* Escreve resultados até que não haja mais linhas na tabela */ 
+				
+				while($consulta = mysql_fetch_array($result)) { 
+				print "Coluna1: $consulta[coluna1] - Coluna2: $consulta[coluna2]<br>"; 
+				} 
+				mysql_free_result($result); 
+				mysql_close($conecta); 
 		?>
 
 	</body>
