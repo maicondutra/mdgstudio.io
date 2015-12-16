@@ -14,7 +14,7 @@
 				/* Escreve resultados até que não haja mais linhas na tabela */ 
 				
 				while($consulta = mysql_fetch_array($result)) { 
-				print "Coluna1: $consulta[coluna1] - Coluna2: $consulta[coluna2]<br>"; 
+				print "id: $consulta[id] - nome: $consulta[nome]<br>"; 
 				} 
 				mysql_free_result($result); 
 				mysql_close($conecta); 
